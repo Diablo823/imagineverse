@@ -1,0 +1,55 @@
+'use client';
+
+import { motion } from "framer-motion";
+import { TypingText, NewFeatures, TitleText } from "../components";
+import styles from '../styles';
+import { staggerContainer, fadeIn, planetVariants } from "../utils/motion";
+import { newFeatures } from "../constants";
+
+const WhatsNew = () => (
+  <section className={`${styles.paddings} relative z-10`}>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
+    >
+
+      
+
+      <motion.div
+        variants={fadeIn('right', 'tween', 0.2, 1)}
+        className="flex-[0.75] flex justify-center flex-col"
+      >
+
+        <TypingText title="| What's New?" />
+        <TitleText title={<>What's New in the Imagineverse?</>} />
+       <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
+          {newFeatures.map((feature) => (
+            <NewFeatures 
+              key={feature.title}
+             {...feature}
+            />
+          ))}
+        </div>
+        
+      </motion.div>
+
+      <motion.div
+        variants={planetVariants('right')}
+        className={`flex-1 ${styles.flexCenter}`}
+      >
+        <img 
+          src="https://ik.imagekit.io/5ok2lashts/celestial-6.jpg?updatedAt=1701773946817" 
+          alt="celestial-6" 
+          className="w-[90%] h-[90%] rounded-[48px] object-cover"
+        />
+      </motion.div>
+
+    </motion.div>
+   
+  </section>
+);
+
+export default WhatsNew;
