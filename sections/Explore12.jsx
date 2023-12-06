@@ -9,7 +9,7 @@ import { celestialimage } from "../constants";
 
 const Explore12 = () => {
 
-    const [active, setActive] = useState('traveller-3');
+    const [active, setActive] = useState('celestial-2');
     
   return (
     <section 
@@ -23,7 +23,7 @@ const Explore12 = () => {
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         
-        <TypingText title="| FrostBone Explorer" textStyles="text-center" />
+        <TypingText title="| The Celestials" textStyles="text-center" />
 
         <TitleText title={<>Click the image you want 
         <br className="md:block hidden" /> to see </>} textStyles="text-center" />

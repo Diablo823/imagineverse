@@ -267,17 +267,17 @@ export const oldimage = [
   {
     id: 'old-2',
     imgUrl: 'https://ik.imagekit.io/5ok2lashts/old-2.jpg?updatedAt=1701772187242',
-    title: 'Vietnamese Old Man'
+    title: 'Chinese Old Man'
   },
   {
     id: 'old-3',
     imgUrl: 'https://ik.imagekit.io/5ok2lashts/old-3.jpg?updatedAt=1701772186935',
-    title: 'Vietnamese Old Man'
+    title: 'Bhutanese Old Man'
   },
   {
     id: 'old-4',
     imgUrl: 'https://ik.imagekit.io/5ok2lashts/old-4.jpg?updatedAt=1701772187674',
-    title: 'Vietnamese Old Man'
+    title: 'Nepalese Old Man'
   },
   {
     id: 'old-5',
